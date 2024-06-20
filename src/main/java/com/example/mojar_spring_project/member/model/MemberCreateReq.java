@@ -3,17 +3,15 @@ package com.example.mojar_spring_project.member.model;
 public class MemberCreateReq {
     String email;
     String password;
-    String name;
-    int userIdx;
+    String nickname;
 
     public MemberCreateReq() {
     }
 
-    public MemberCreateReq(String email, String password, String name, int userIdx) {
+    public MemberCreateReq(String email, String password, String nickname) {
         this.email = email;
         this.password = password;
-        this.name = name;
-        this.userIdx = userIdx;
+        this.nickname = nickname;
     }
 
     public String getEmail() {
@@ -32,19 +30,11 @@ public class MemberCreateReq {
         this.password = password;
     }
 
-    public String getName() {
-        return name;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getUserIdx() {
-        return userIdx;
-    }
-
-    public void setUserIdx(int userIdx) {
-        this.userIdx = userIdx;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 }
