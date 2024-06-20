@@ -4,9 +4,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class BoardService {
-    BoardService boardService;
+    BoardRepository boardRepository;
 
-    public BoardService(BoardService boardService) {
-        this.boardService = boardService;
+    public BoardService(BoardRepository boardRepository) {
+        this.boardRepository = boardRepository;
     }
 }
